@@ -15,8 +15,10 @@ makedocs(
 )
 
 deploydocs(
-    deps = Deps.pip("mkdocs", "pygments", "mkdocs-material"),
     repo = "github.com/BioJulia/BioSymbols.jl.git",
     julia = "1.0",
     osname = "linux",
+    target = "build",
+    deps = nothing,
+    make = nothing
 )
